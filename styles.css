@@ -1,0 +1,83 @@
+:root {
+  --ink: #1a2332;
+  --muted: #4a5568;
+  --paper: #f7f4ef;
+  --card: #ffffff;
+  --line: #d9d2c5;
+  --accent: #1e4d6b;
+  --accent-soft: #e8f0f5;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.55;
+  font-size: 1.05rem;
+}
+a { color: var(--accent); }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+header {
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.brand { font-weight: 700; color: var(--ink); text-decoration: none; font-size: 1.05rem; }
+.brand span { display: block; font-weight: 500; font-size: 0.85rem; color: var(--muted); }
+nav { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; margin-top: 0.75rem; }
+nav a { text-decoration: none; color: var(--muted); font-size: 0.95rem; }
+nav a:hover, nav a[aria-current="page"] { color: var(--accent); text-decoration: underline; }
+main { padding: 2rem 0 3rem; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.5rem; }
+h2 { font-size: 1.35rem; margin: 2rem 0 0.75rem; }
+.lede { font-size: 1.15rem; color: var(--muted); margin: 0 0 1.5rem; }
+.hero {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.pillars { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.pillars li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+}
+.pillars strong { display: block; color: var(--accent); margin-bottom: 0.25rem; }
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--accent);
+  color: #fff !important;
+  text-decoration: none !important;
+  padding: 0.7rem 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.cta:hover { filter: brightness(1.05); }
+.note {
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  padding: 0.85rem 1rem;
+  margin: 1.25rem 0;
+  border-radius: 0 8px 8px 0;
+}
+footer {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 0 2.5rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.disclaimer { font-weight: 600; color: var(--ink); }
+@media (min-width: 700px) {
+  header .bar { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+  nav { margin-top: 0; justify-content: flex-end; max-width: 28rem; }
+}
