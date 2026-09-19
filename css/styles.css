@@ -107,6 +107,19 @@ h2 { font-size: 1.35rem; margin: 2rem 0 0.75rem; }
   border: 1px solid var(--line);
   margin: 0 0 1.25rem;
 }
+
+.portrait-photo {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  aspect-ratio: 900 / 1109;
+  object-fit: contain;
+  object-position: center top;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  margin: 0 0 1.25rem;
+}
 .doc-card {
   background: var(--card);
   border: 1px solid var(--line);
