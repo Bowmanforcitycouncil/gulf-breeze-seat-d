@@ -88,9 +88,24 @@ h2 { font-size: 1.35rem; margin: 2rem 0 0.75rem; }
 .about-photo {
   width: 100%;
   max-width: 280px;
+  height: auto;
+  aspect-ratio: 900 / 1006;
+  object-fit: contain;
+  object-position: center top;
   border-radius: 12px;
   border: 1px solid var(--line);
   display: block;
+}
+.page-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+  object-fit: cover;
+  object-position: center 70%;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  margin: 0 0 1.25rem;
 }
 .doc-card {
   background: var(--card);
